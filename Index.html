@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>VINAY SUNTE | Franchise Opportunities</title><style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+header {
+  background: #102b50;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #071b32;
+  padding: 15px 5px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  display: inline-block;
+}
+
+.hero {
+  background: linear-gradient(135deg, #d9eaff, #ffffff);
+  padding: 55px 15px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 30px;
+  color: #102b50;
+}
+
+button {
+  background: #ff9800;
+  color: white;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 12px #ddd;
+}
+
+.card h3 {
+  color: #102b50;
+}
+
+form {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+input, select, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px;
+  margin: 9px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  background: #102b50;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.small {
+  font-size: 13px;
+  color: #666;
+}
+</style></head><body><header>
+  <h1>VINAY SUNTE</h1>
+  <p>Your Business Journey Starts Here!</p>
+  <p>Food | Coaching | Retail | Farming</p>
+</header><nav>
+  <a href="#home">Home</a>
+  <a href="#franchise">Franchises</a>
+  <a href="#about">About Us</a>
+  <a href="#apply">Apply Now</a>
+</nav><section class="hero" id="home">
+  <h2>Build Your Business With Us</h2>
+  <p>Explore business opportunities across four major sectors.</p>
+  <a href="#franchise">
+    <button>Explore Opportunities</button>
+  </a>
+</section><section class="container" id="franchise">
+  <h2 style="text-align:center">Our Franchise Categories</h2>  <div class="cards"><div class="card">
+  <h3>🍔 Food Franchise</h3>
+  <p>Explore restaurant, cafe and fast-food business opportunities.</p>
+  <a href="#apply"><button>Enquire Now</button></a>
+</div>
+
+<div class="card">
+  <h3>📚 Coaching Franchise</h3>
+  <p>Explore coaching centres and education business opportunities.</p>
+  <a href="#apply"><button>Enquire Now</button></a>
+</div>
+
+<div class="card">
+  <h3>🏪 Retail Franchise</h3>
+  <p>Explore retail stores and product-selling opportunities.</p>
+  <a href="#apply"><button>Enquire Now</button></a>
+</div>
+
+<div class="card">
+  <h3>🌾 Farming Franchise</h3>
+  <p>Explore agriculture, dairy and farming opportunities.</p>
+  <a href="#apply"><button>Enquire Now</button></a>
+</div>
+
+  </div>
+</section><section class="container" id="about">
+  <h2>About VINAY SUNTE</h2>
+  <p>
+    VINAY SUNTE aims to connect aspiring entrepreneurs with
+    business opportunities in food, education, retail and farming.
+    Contact us to learn more about available opportunities.
+  </p>
+</section><section class="container" id="apply">
+  <h2>Apply for a Franchise</h2>  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Full Name" required><input type="tel"
+       placeholder="Your Mobile Number"
+       pattern="[0-9]{10}"
+       maxlength="10"
+       required>
+
+<input type="email" placeholder="Your Email (optional)">
+
+<input type="text" placeholder="Your City" required>
+
+<select required>
+  <option value="">Select Franchise Category</option>
+  <option>Food Franchise</option>
+  <option>Coaching Franchise</option>
+  <option>Retail Franchise</option>
+  <option>Farming Franchise</option>
+</select>
+
+<select required>
+  <option value="">Select Investment Budget</option>
+  <option>Below ₹1 Lakh</option>
+  <option>₹1–5 Lakh</option>
+  <option>₹5–10 Lakh</option>
+  <option>Above ₹10 Lakh</option>
+</select>
+
+<textarea placeholder="Tell us about your business interest"></textarea>
+
+<button type="submit">Submit Enquiry</button>
+
+<p id="message"></p>
+
+<p class="small">
+  Demo form: Your information will not be sent until a form
+  submission service is connected.
+</p>
+
+  </form>
+</section><footer>
+  <h3>VINAY SUNTE</h3>
+  <p>Your Business Journey Starts Here!</p>
+  <p>Food | Coaching | Retail | Farming</p>
+  <p>© 2026 VINAY SUNTE. All rights reserved.</p>
+</footer><script>
+function submitForm(event) {
+  event.preventDefault();
+
+  document.getElementById("message").textContent =
+    "Thank you for your interest! This is a demo form. Please contact the website owner directly for now.";
+}
+</script></body>
+</html>
